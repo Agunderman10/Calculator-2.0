@@ -93,7 +93,7 @@ namespace Calculator2
             double op1 = Convert.ToDouble(screen.Text.Substring(0, iOp));
             double op2 = Convert.ToDouble(screen.Text.Substring(iOp + 1, screen.Text.Length - iOp -1));
 
-            if (op == "+")
+            if (op == "+") //can only do math between one operator and two numbers
             {
                 screen.Text += "=" + (op1 +op2);
             }
